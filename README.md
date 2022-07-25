@@ -5,6 +5,20 @@
 [![Github-CI](https://github.com/freebayes/freebayes/workflows/CI/badge.svg)](https://github.com/freebayes/freebayes/actions) [![Travis-CI](https://travis-ci.com/freebayes/freebayes.svg?branch=master)](https://travis-ci.com/freebayes/freebayes) [![AnacondaBadge](https://anaconda.org/bioconda/freebayes/badges/installer/conda.svg)](https://anaconda.org/bioconda/freebayes) [![DL](https://anaconda.org/bioconda/freebayes/badges/downloads.svg)](https://anaconda.org/bioconda/freebayes) [![BrewBadge](https://img.shields.io/badge/%F0%9F%8D%BAbrew-freebayes-brightgreen.svg)](https://github.com/brewsci/homebrew-bio) [![GuixBadge](https://img.shields.io/badge/gnuguix-freebayes-brightgreen.svg)](https://www.gnu.org/software/guix/packages/F/) [![DebianBadge](https://badges.debian.net/badges/debian/testing/freebayes/version.svg)](https://packages.debian.org/testing/freebayes) [![Chat on Matrix](https://matrix.to/img/matrix-badge.svg)](https://matrix.to/#/#vcflib:matrix.org)
 --------
 
+## Dockerfile Usage:
+
+### Setup (Only need to do once per device)
+    git clone https://github.com/muffyn20/freebayes.git # Clone Source Code
+    docker build -t biotech freebayes # Build Image
+    rm -rf ./freebayes # Remove Source (Not needed anymore)
+
+### Run the desired application
+    docker run biotech freebayes
+    docker run biotech bamleftalign
+    docker run biotech vcftools
+    docker run biotech vcffilter
+
+
 ## Overview
 
 [*freebayes*](http://arxiv.org/abs/1207.3907) is a
